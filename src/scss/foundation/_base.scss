@@ -1,0 +1,22 @@
+@use '../setting/setting-merge' as *;
+
+html {
+  // font-family:;
+  font-family: 'Belanosima', 'Noto Serif JP', sans-serif, serif;
+}
+
+img {
+  width: 100%;
+}
+
+@include mq(pc) {
+  ._sp {
+    display: none;
+  }
+}
+
+@include mq(sp) {
+  ._pc {
+    display: none;
+  }
+}
